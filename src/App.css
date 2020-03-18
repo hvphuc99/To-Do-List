@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.task-form-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-form-btn-remove {
+  padding: 0px 2px;
+}
