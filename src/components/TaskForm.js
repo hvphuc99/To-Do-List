@@ -5,7 +5,7 @@ class TaskForm extends Component {
     return (
       <div className="panel panel-warning">
           <div className="panel-heading task-form-header">
-              <h3 className="panel-title">Thêm Công Việc</h3>
+              <h3 className="panel-title">Add Event</h3>
               <button type="button" class="btn btn-danger task-form-btn-remove">
                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
               </button>
@@ -13,18 +13,17 @@ class TaskForm extends Component {
           <div className="panel-body">
               <form>
                   <div className="form-group">
-                      <label>Tên :</label>
+                      <label>Title :</label>
                       <input type="text" className="form-control" />
                   </div>
-                  <label>Trạng Thái :</label>
+                  <label>Status :</label>
                   <select className="form-control" required="required">
                       <option value="1">Kích Hoạt</option>
                       <option value="0">Ẩn</option>
                   </select>
                   <br/>
                   <div className="text-center">
-                      <button type="submit" className="btn btn-warning">Thêm</button>&nbsp;
-                      <button type="submit" className="btn btn-danger">Hủy Bỏ</button>
+                      <button type="submit" className="btn btn-warning">Add</button>
                   </div>
               </form>
           </div>

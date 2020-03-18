@@ -5,20 +5,13 @@ class Sort extends Component {
     return (
       <div className="dropdown">
           <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Sắp Xếp <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+              Sort <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
               <li>
                   <a role="button">
                               <span className="fa fa-sort-alpha-asc pr-5">
-                                  Tên A-Z
-                              </span>
-                          </a>
-              </li>
-              <li>
-                  <a role="button">
-                              <span className="fa fa-sort-alpha-desc pr-5">
-                                  Tên Z-A
+                                  A-Z
                               </span>
                           </a>
               </li>

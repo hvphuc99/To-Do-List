@@ -8,9 +8,9 @@ class TaskList extends Component {
           <thead>
               <tr>
                   <th className="text-center">STT</th>
-                  <th className="text-center">Tên</th>
-                  <th className="text-center">Trạng Thái</th>
-                  <th className="text-center">Hành Động</th>
+                  <th className="text-center">Title</th>
+                  <th className="text-center">Status</th>
+                  <th className="text-center">Action</th>
               </tr>
           </thead>
           <tbody>
@@ -21,7 +21,7 @@ class TaskList extends Component {
                   </td>
                   <td>
                       <select className="form-control">
-                          <option value="-1">Tất Cả</option>
+                          <option value="-1">All</option>
                           <option value="0">Ẩn</option>
                           <option value="1">Kích Hoạt</option>
                       </select>

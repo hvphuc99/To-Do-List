@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="container">
           <div className="text-center">
-              <h1>Quản Lý Công Việc</h1>
+              <h1>To Do List</h1>
               <hr/>
           </div>
           <div className="row">
@@ -18,7 +18,7 @@ class App extends Component {
               </div>
               <div className="col-xs-8 col-sm-8 col-md-8 col-lg-8">
                   <button type="button" className="btn btn-primary">
-                      <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Thêm Công Việc
+                      <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Event
                   </button>
                   <Control />
                   <div className="row mt-15">
