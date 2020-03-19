@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../actions/index'
 
 class TaskForm extends Component {
   render() {
@@ -6,8 +8,8 @@ class TaskForm extends Component {
       <div className="panel panel-warning">
           <div className="panel-heading task-form-header">
               <h3 className="panel-title">Add Event</h3>
-              <button type="button" class="btn btn-danger task-form-btn-remove">
-                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+              <button type="button" className="btn btn-danger task-form-btn-remove" onClick={this.props.closeTaskForm}>
+                <span className="glyphicon glyphicon-remove" aria-hidden="true"></span>
               </button>
           </div>
           <div className="panel-body">
@@ -32,4 +34,12 @@ class TaskForm extends Component {
   }
 }
 
-export default TaskForm;
+const mapDispatchToProps = (dispatch, props) => {
+  return {
+    closeTaskForm: () => {
+      dispatch(actions.closeTaskForm())
+    }
+  }
+}
+
+export default connect(null, mapDispatchToProps)(TaskForm);
